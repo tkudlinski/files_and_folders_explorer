@@ -46,7 +46,7 @@ pub fn render(app: &mut App, f: &mut Frame) {
             Block::default()
                 .padding(Padding::new(1, 1, 1, 1))
                 .borders(Borders::ALL)
-                .title("Item in folder"),
+                .title("Items in folder"),
         )
         .highlight_style(
             Style::default()

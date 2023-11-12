@@ -19,10 +19,13 @@ pub struct App {
 
 impl App {
     pub fn new(current_path: String) -> Self {
+        let mut state = ListState::default();
+        state.select(Some(0));
+
         Self {
             should_quit: false,
             current_path,
-            state: ListState::default(),
+            state,
             current_item_details: None,
             current_item_content: None,
             list_of_items: vec![],
